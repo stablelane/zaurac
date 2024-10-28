@@ -1,9 +1,10 @@
 body{
     margin: 0;
     width: 100vw;
-    background-color: #090E10;
+    background-color: #f8f9fa;
     color: #fff;   
     font-family: "Overpass", sans-serif;
+    padding-bottom: 50px;
 }
 *, *::before, *::after {
     box-sizing: border-box;  
@@ -13,22 +14,27 @@ a{
     display: inline-block;
 
 }
+header.logo {
+    padding: 1em 2em;
+    background-color: #003d7e;
+}   
+header.logo h1,footer h1 {
+    font-family: "Aeonis LT W04 Bold Cond"; 
+    color: #fff;
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+}
 .navbar {
-    background-color: #171f22;
+    background-color: #003d7e;
     padding: 1rem 2rem;
     position: fixed;
     width: 100%;
-    top: 0;
+    bottom: 0;
     z-index: 6;
     backdrop-filter: blur(2px);
 }
 
-.navbar h1 {
-    font-family: "Aeonis LT W04 Bold Cond"; 
-    color: #EC735A;
-    font-size: 2em;
-    margin: 0;
-}
 
 .nav-content {
     max-width: 1200px;
@@ -38,6 +44,10 @@ a{
     align-items: center;
 }
 
+.nav-content img {
+    filter: invert(100%);
+    width: 30px;
+}
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -70,7 +80,7 @@ a{
 .hamburger span {
     width: 30px;
     height: 3px;
-    background: #EC735A;
+    background: #fff;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -91,7 +101,7 @@ a{
 }
 
 .hero{
-    height: 100vh;
+    height: 85.7vh;
     width: 100vw;
     overflow: hidden;
     font-family: "Inter", sans-serif;
@@ -138,24 +148,92 @@ a{
 .main-content {
     position: relative;
     margin: 35px 20px;
-    color: #d2a294;
+    color: #fff;
     clear: both;
+    
 }
+
 .card {
-    background-color: #171f22;
-    padding: 30px 20px;
-    border-radius: 10px;
-    height: 264px;
+    background-color: #fff;
+    overflow: hidden;
+    color: black;
     margin-bottom: 35px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
 }
+
 .card-head {
-    margin: 0;
-    font-size: 25px;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
 }
-.card-content {
-    letter-spacing: .025em;
-    line-height: 1.66667;
+.card-head img {
+    object-fit: contain;
+    width: 100%;
+    overflow: hidden;
+}
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 9px 20px;
+    color: #fff;
+}
+
+.card-overlay h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+.card-contents {
+    position: relative;
+    padding: 10px 15px 20px;
+}
+
+.card-contents p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.card-contents ul {
+    padding: 0 9px;
+    font-size: 1rem;
     font-weight: 300;
+    list-style: none;
+    margin-bottom: 15px;
+}
+.card-contents li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+.card-contents li::before {
+    content: "•";
+    color: #003d7e;
+    position: absolute;
+    left: 0;
+}
+.card-contents button{
+    background-color: #003d7e;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #003d7e;
+    text-align: center;
+    padding-bottom: 50px;
+}   
+footer h4 {
+    color: #d4a418;
+}
+footer p {
+    margin: 0;
 }
 @media(max-width: 768px) {
     .hamburger {
@@ -186,8 +264,5 @@ a{
         text-align: center;
         padding: 1rem;
         font-size: 1.2rem;
-    }
-    .hero-image{
-        object-position: -800px center;
     }
 }
