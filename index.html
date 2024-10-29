@@ -1,196 +1,224 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave&display=swap" rel="stylesheet">
-        <link href="https://db.onlinewebfonts.com/c/704a7a1241ae3dff4e78ead657e86cc4?family=Aeonis+LT+W04+Bold+Cond" rel="stylesheet">
-    </head>
-    <body>
-        <header class="logo">
-            <h1>zaurac</h1>
-        </header>
-        <nav class="navbar">
-            <div class="nav-content">
-                <img src="images/mail.png" alt="" class="email-logo">
-                <img src="images/whatsapp.png" alt="" class="whatsapp-logo">
-                <img src="images/call.png" alt="" class="call-logo">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave&display=swap"
+        rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/704a7a1241ae3dff4e78ead657e86cc4?family=Aeonis+LT+W04+Bold+Cond"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="logo">
+        <h1>zaurac</h1>
+        <div class="nav-links-top">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="nav-content">
+                <div class="nav-icons">
+                    <img src="images/mail.png" alt="" class="email-logo">
+                    <p>Email</p>
+                </div>
+                <div class="nav-icons">
+                    <img src="images/whatsapp.png" alt="" class="whatsapp-logo">
+                    <p>Whatsapp</p>
+                </div>
+
+                <div class="nav-icons">
+                    <img src="images/phone-call.png" alt="" class="call-logo">
+                    <p>Call</p>
+                </div>
+
+            <div class="nav-icons">
                 <button class="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <div class="nav-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#contact">Contact</a>
+                <p>Menu</p>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <img src="images/chandra-oh-Fg-Ze2uoOdM-unsplash.jpg" alt="Hero Image" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-p">PREMIUM</p>
+            <h1 class="hero-title">Pool Services</h1>
+            <p class="hero-subtitle">Specialists in pool care, cleaning and maintenance</p>
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div class="card">
+            <div class="card-head">
+                <img src="images/maintanence.jpg" alt="">
+                <div class="card-overlay">
+                    <h3>Regular Maintenance</h3>
                 </div>
             </div>
-        </nav>
-        <section class="hero">
-            <img src="images/chandra-oh-Fg-Ze2uoOdM-unsplash.jpg" alt="Hero Image" class="hero-image">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <p class="hero-p">PREMIUM</p>
-                <h1 class="hero-title">Pool Services</h1>
-                <p class="hero-subtitle">Specialists in pool care, cleaning and maintenance</p>
+            <div class="card-contents">
+                <p>Keep your pool in pristine condition with our
+                    comprehensive maintenance services.</p>
+                <ul>
+                    <li>Professional cleaning and skimming</li>
+                    <li>Expert vacuuming services</li>
+                    <li>Water chemical balancing</li>
+                </ul>
             </div>
-        </section>
+            <button class="trial-btn">Find out more</button>
 
-        <section class="main-content">
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/maintanence.jpg" alt="">
-                    <div class="card-overlay">
-                        <h3>Regular Maintenance</h3>
-                    </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <img src="images/repair.jpg" alt="">
+                <div class="card-overlay">
+                    <h3>Equipment Repair & Upkeep</h3>
                 </div>
-                <div class="card-contents">
-                    <p>Keep your pool in pristine condition with our 
-                        comprehensive maintenance services.</p>
-                    <ul>
-                        <li>Professional cleaning and skimming</li>
-                        <li>Expert vacuuming services</li>
-                        <li>Water chemical balancing</li>
-                    </ul>
-                    <button>Find out more</button>
-                </div>
-    
             </div>
-
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/repair.jpg" alt="">
-                    <div class="card-overlay">
-                        <h3>Equipment Repair & Upkeep</h3>
-                    </div>
-                </div>
-                <div class="card-contents">
-                    <p>Expert repair and maintenance services for all your pool equipment needs.</p>
-                    <ul>
-                        <li>Pump and filter repairs</li>
-                        <li>Heater maintenance</li>
-                        <li>Lighting system services</li>
-                    </ul>
-                    <button>Find out more</button>
-                </div>
-    
+            <div class="card-contents">
+                <p>Expert repair and maintenance services for all your pool equipment needs.</p>
+                <ul>
+                    <li>Pump and filter repairs</li>
+                    <li>Heater maintenance</li>
+                    <li>Lighting system services</li>
+                </ul>
             </div>
+            <button>Find out more</button>
 
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/opening.jpg" alt="">
-                    <div class="card-overlay">
-                        <h3>Seasonal Services</h3>
-                    </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <img src="images/opening.jpg" alt="">
+                <div class="card-overlay">
+                    <h3>Seasonal Services</h3>
                 </div>
-                <div class="card-contents">
-                    <p>Prepare your pool for every season with our specialized services.</p>
-                    <ul>
-                        <li>Summer opening preparation</li>
-                        <li>Winter protection services</li>
-                        <li>Seasonal maintenance packages</li>
-                    </ul>
-                    <button>Find out more</button>
-                </div>
-    
             </div>
-
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/equipment.webp" alt="">
-                    <div class="card-overlay">
-                        <h3>Equipment Installation</h3>
-                    </div>
-                </div>
-                <div class="card-contents">
-                    <p>Upgrade your pool with modern equipment and enhanced features.</p>
-                    <ul>
-                        <li>New equipment installation</li>
-                        <li>System upgrades</li>
-                        <li>Efficiency improvements</li>
-                    </ul>
-                    <button>Find out more</button>
-                </div>
-    
+            <div class="card-contents">
+                <p>Prepare your pool for every season with our specialized services.</p>
+                <ul>
+                    <li>Summer opening preparation</li>
+                    <li>Winter protection services</li>
+                    <li>Seasonal maintenance packages</li>
+                </ul>
             </div>
+            <button>Find out more</button>
 
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/leak.jpg" alt="">
-                    <div class="card-overlay">
-                        <h3>Leak Detection & Repair</h3>
-                    </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <img src="images/equipment.webp" alt="">
+                <div class="card-overlay">
+                    <h3>Equipment Installation</h3>
                 </div>
-                <div class="card-contents">
-                    <p>Professional leak detection and repair services to protect your investment.</p>
-                    <ul>
-                        <li>Advanced leak detection</li>
-                        <li>Structure repair</li>
-                        <li>Plumbing maintenance</li>
-                    </ul>
-                    <button>Find out more</button>
-                </div>
-    
             </div>
-
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/chemical.jpg" alt="">
-                    <div class="card-overlay">
-                        <h3>Chemical Maintenance</h3>
-                    </div>
-                </div>
-                <div class="card-contents">
-                    <p>Keep your pool water safe and crystal clear with expert chemical maintenance.</p>
-                    <ul>
-                        <li>Chemical level monitoring</li>
-                        <li>Water treatment</li>
-                        <li>Bacteria prevention</li>
-                    </ul>
-                    <button>Find out more</button>
-                </div>
-    
+            <div class="card-contents">
+                <p>Upgrade your pool with modern equipment and enhanced features.</p>
+                <ul>
+                    <li>New equipment installation</li>
+                    <li>System upgrades</li>
+                    <li>Efficiency improvements</li>
+                </ul>
             </div>
+            <button>Find out more</button>
 
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/remodel.jpg" alt="">
-                    <div class="card-overlay">
-                        <h3>Renovation & Remodeling</h3>
-                    </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <img src="images/leak.jpg" alt="">
+                <div class="card-overlay">
+                    <h3>Leak Detection & Repair</h3>
                 </div>
-                <div class="card-contents">
-                    <p>Transform your pool with our comprehensive renovation services.</p>
-                    <ul>
-                        <li>Complete pool makeovers</li>
-                        <li>Feature additions</li>
-                        <li>Modern upgrades</li>
-                    </ul>
-                    <button>Find out more</button>
+            </div>
+            <div class="card-contents">
+                <p>Professional leak detection and repair services to protect your investment.</p>
+                <ul>
+                    <li>Advanced leak detection</li>
+                    <li>Structure repair</li>
+                    <li>Plumbing maintenance</li>
+                </ul>
+            </div>
+            <button>Find out more</button>
+
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <img src="images/chemical.jpg" alt="">
+                <div class="card-overlay">
+                    <h3>Chemical Maintenance</h3>
                 </div>
-    
             </div>
-
-
-            
-            
-        </section>
-
-        <footer>
-            <h1>zaurac</h1>
-            <div class="contact">
-                <h4>CONTACT US</h4>
-                <p>Zaurac General Maintenance & Swimming Pool
-                    Services</p>
-                <p>Mussafah, Abu Dhabi, UAE</p>
+            <div class="card-contents">
+                <p>Keep your pool water safe and crystal clear with expert chemical maintenance.</p>
+                <ul>
+                    <li>Chemical level monitoring</li>
+                    <li>Water treatment</li>
+                    <li>Bacteria prevention</li>
+                </ul>
             </div>
-        </footer>
-        
-        <script src="index.js"></script>
-    </body>
+            <button>Find out more</button>
+
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <img src="images/remodel.jpg" alt="">
+                <div class="card-overlay">
+                    <h3>Renovation & Remodeling</h3>
+                </div>
+            </div>
+            <div class="card-contents">
+                <p>Transform your pool with our comprehensive renovation services.</p>
+                <ul>
+                    <li>Complete pool makeovers</li>
+                    <li>Feature additions</li>
+                    <li>Modern upgrades</li>
+                </ul>
+            </div>
+            <button>Find out more</button>
+
+        </div>
+
+
+
+
+    </section>
+
+    <footer>
+        <h1>zaurac</h1>
+        <div class="contact">
+            <h4>CONTACT US</h4>
+            <p>Zaurac General Maintenance & Swimming Pool
+                Services</p>
+            <p>Mussafah, Abu Dhabi, UAE</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
