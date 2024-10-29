@@ -13,3 +13,4 @@ const links = document.querySelectorAll('.nav-links a');
             navLinks.classList.remove('active');
         });
     });
+

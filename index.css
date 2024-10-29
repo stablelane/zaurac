@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     width: 100vw;
@@ -24,6 +27,13 @@ header.logo {
 header.logo a {
     color: #fff;
 }  
+.logo-image {
+    display: flex;
+    gap: 10px;
+}
+.logo-image img {
+    width: 50px;
+}
 header.logo h1,footer h1 {
     font-family: "Aeonis LT W04 Bold Cond"; 
     color: #fff;
@@ -256,6 +266,32 @@ footer h4 {
 footer p {
     margin: 0;
 }
+.socials {
+    margin-top: 25px;
+}
+.social-logo {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+footer img {
+    width: 30px;
+    
+    filter: invert(37%) sepia(98%) saturate(1223%) hue-rotate(181deg) brightness(96%) contrast(101%);
+}
+.phone-no {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+a[href^="mailto:"] {
+    color: inherit; /* or your specific color */
+    text-decoration: none;
+    -webkit-text-fill-color: inherit; /* or your specific color */
+    display: block;
+    margin-bottom: 10px;
+  }
 @media(max-width: 768px) {
    
     .hamburger {
