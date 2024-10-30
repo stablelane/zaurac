@@ -57,10 +57,14 @@ header.logo h1,footer h1 {
 }
 
 
-.nav-content p {
+.nav-content p , .nav-content a {
     margin: 0;
+    color: #fff;
     text-align: center;
     font-size: 12px;
+}
+.nav-content>a>p {
+    margin: 0;
 }
 .nav-content {
     max-width: 1200px;
@@ -74,9 +78,12 @@ header.logo h1,footer h1 {
     filter: invert(100%);
     width: 30px;
 }
-.nav-links, .nav-links-top {
+.nav-links{
     display: flex;
     gap: 2rem;
+}
+.nav-links-top {
+    display: none;
 }
 
 .nav-links a {
@@ -91,7 +98,6 @@ header.logo h1,footer h1 {
 
 /* Hamburger Menu Styles */
 .hamburger {
-    display: none;
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
@@ -242,13 +248,14 @@ header.logo h1,footer h1 {
     left: 0;
 }
 .card button{
-    background-color: #003d7e;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,61,126,1) 0%, rgba(0,212,255,1) 100%); 
     color: #fff;
     border: none;
     padding: 10px 15px;
     border-radius: 20px;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     position: absolute;
     left: 15px;
     bottom: 20px;
@@ -292,6 +299,9 @@ a[href^="mailto:"] {
     display: block;
     margin-bottom: 10px;
   }
+.shadow {
+    filter: brightness(50%);
+}
 @media(max-width: 768px) {
    
     .hamburger {
@@ -306,13 +316,14 @@ a[href^="mailto:"] {
         flex-direction: column;
         position: fixed;
         top: 0;
-        right: -100%;
-        width: 100%;
+        right: -80%;
+        width: 80%;
         height: 100vh;
         background: #171f22;
         padding-top: 4rem;
         transition: right 0.3s ease-in-out;
         backdrop-filter: blur(10px);
+        z-index: 1000;
     }
 
     .nav-links.active {
@@ -330,8 +341,23 @@ a[href^="mailto:"] {
     .navbar {
         display: none;
     }
+    .hamburger {
+        display: none;
+    }
+    .nav-links-top {
+        display: flex;
+        gap: 2rem;
+    }
+    .container {
+        margin-top: 70px;
+    }
     header.logo {
         justify-content: space-between;
+        position: fixed;
+        z-index: 500;
+        left: 0;
+        right: 0;
+        top: 0;
     }
     
     .main-content {
@@ -353,6 +379,9 @@ a[href^="mailto:"] {
     }
     .navbar {
         display: none;
+    }
+    .container {
+        margin-top: 80px;
     }
     .hero-content {
         top: 180px;

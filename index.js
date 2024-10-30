@@ -5,6 +5,7 @@ const links = document.querySelectorAll('.nav-links a');
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
+        document.getElementById('container').classList.toggle('shadow')
     });
 
     links.forEach(link => {
@@ -14,3 +15,7 @@ const links = document.querySelectorAll('.nav-links a');
         });
     });
 
+const enquiryForm = document.getElementById('enquiry-form')
+enquiryForm.addEventListener('click',()=>{
+    document.getElementById('container').innerHTML = ''
+})
