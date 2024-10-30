@@ -20,7 +20,10 @@
 
 <body>
     <header id="home" class="logo">
-        <h1>zaurac</h1>
+        <div class="logo-image">
+            <img src="images/logo5-removebg.png" alt="">
+            <h1>zaurac</h1>
+        </div>
         <div class="nav-links-top">
             <a href="#home">Home</a>
             <a href="#footer">Blogs</a>
@@ -30,10 +33,10 @@
     </header>
     <nav class="navbar">
         <div class="nav-content">
-            <div id="enquiry-form" class="nav-icons">
+            <a href="#enquiry-form" id="enquiry-form-btn" class="nav-icons">
                 <img src="images/mail.png" alt="" class="email-logo">
                 <p>Email</p>
-            </div>
+            </a>
             <a  class="nav-icons">
                 <img src="images/whatsapp.png" alt="" class="whatsapp-logo">
                 <p>Whatsapp</p>
@@ -193,8 +196,34 @@
             </div>
         </section>
     </div>
-    <div class="form">
-        
+    <div id="enquiry-form" class="enquiry-form">
+        <div class="card">
+            <form>
+                <h2>Get in touch</h2>
+                <label for="customer-name"></label>
+                <input name="customer-name" id="customer-name" placeholder="Name" type="text">
+                <label for="customer-phone"></label>
+                <input name="customer-phone" id="customer-phone" placeholder="Phone" type="tel">
+                <label for="service"></label>
+                <select name="service" id="service">
+                    <option value="Regular Maintenance">Regular Maintenance</option>
+                    <option value="Equipment Repair & Upkeep">Equipment Repair & Upkeep</option>
+                    <option value="Seasonal Services">Seasonal Services</option>
+                    <option value="Equipment Installation">Equipment Installation</option>
+                    <option value="Leak Detection & Repair">Leak Detection & Repair</option>
+                    <option value="Chemical Maintenance">Chemical Maintenance</option>
+                    <option value="Renovation & Remodeling">Renovation & Remodeling</option>
+                    <option value="Other">Others</option>
+                </select>
+                <label for="message"></label>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <label for="sumbit-button"></label>
+                <button name="submit-button" id="submit-button">
+                    Send Message
+                </button>
+            
+            </form>
+        </div>
     </div>
 
     <footer id="footer">

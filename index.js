@@ -15,7 +15,9 @@ const links = document.querySelectorAll('.nav-links a');
         });
     });
 
-const enquiryForm = document.getElementById('enquiry-form')
-enquiryForm.addEventListener('click',()=>{
+const enquiryFormBtn = document.getElementById('enquiry-form-btn')
+enquiryFormBtn.addEventListener('click',()=>{
     document.getElementById('container').innerHTML = ''
+    document.getElementById('enquiry-form').classList.add('show')
+    console.log("hello")
 })
