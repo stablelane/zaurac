@@ -12,12 +12,14 @@ const links = document.querySelectorAll('.nav-links a');
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
             navLinks.classList.remove('active');
+            document.getElementById('container').classList.remove('shadow')
         });
     });
 
-const enquiryFormBtn = document.getElementById('enquiry-form-btn')
-enquiryFormBtn.addEventListener('click',()=>{
-    document.getElementById('container').innerHTML = ''
-    document.getElementById('enquiry-form').classList.add('show')
-    console.log("hello")
-})
+
+// const enquiryFormBtn = document.getElementById('enquiry-form-btn')
+// enquiryFormBtn.addEventListener('click',()=>{
+//     document.getElementById('container').innerHTML = ''
+//     document.getElementById('enquiry-form').classList.add('show')
+//     console.log("hello")
+// })

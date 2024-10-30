@@ -260,6 +260,7 @@ header.logo h1,footer h1 {
     position: absolute;
     left: 15px;
     bottom: 20px;
+    cursor: pointer;
     
 }
 
@@ -303,8 +304,10 @@ a[href^="mailto:"] {
 .shadow {
     filter: brightness(50%);
 }
+
+/* enquiry-form page */
 .enquiry-form {
-    display: none;
+    display: flex;
     height: 90vh;
     color: black;
     justify-content: center;
@@ -322,6 +325,12 @@ a[href^="mailto:"] {
 .enquiry-form > .card  #submit-button {
     left: 30px;
 }
+.enquiry-form > .card #back-home {
+    position: absolute;
+    bottom: 30px;
+    left: 200px;
+    color: #0e72dd;
+}
 .card > form {
     display: flex;
     flex-direction: column;
@@ -333,6 +342,11 @@ a[href^="mailto:"] {
     border-radius: 5px;
     border: 1px solid rgb(192, 190, 190);
     font-size: 16px;
+}
+.enquiry-form textarea {
+    resize: none;
+    height: 100px;
+
 }
 .enquiry-form input::placeholder, .enquiry-form textarea::placeholder , .enquiry-form select{
     font-size: 16px;
@@ -373,6 +387,9 @@ a[href^="mailto:"] {
         padding: 1rem;
         font-size: 1.2rem;
     }
+    .inner-card {
+        display: none;
+    }
 }
 @media(min-width:768px) {
     .navbar {
@@ -405,6 +422,10 @@ a[href^="mailto:"] {
     }
     .card {
         margin-bottom: 0;
+    }
+    .enquiry-form > .card {
+        width: 70vh;
+        height: 500px;
     }
 }
 @media(min-width:992px) {
