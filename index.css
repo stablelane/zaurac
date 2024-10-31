@@ -431,7 +431,7 @@ a[href^="mailto:"] {
         width: 80%;
         height: 100vh;
         background: #171f22;
-        padding-top: 18rem;
+        padding-top: 12rem;
         transition: right 0.3s ease-in-out;
         backdrop-filter: blur(10px);
         z-index: 1000;
