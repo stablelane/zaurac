@@ -393,6 +393,9 @@ a[href^="mailto:"] {
 .blogpost-content {
     color: black;
 }
+.enquiryform-blog {
+    height: 100%;
+}
 @media(max-width: 768px) {   
     .hamburger {
         display: flex;

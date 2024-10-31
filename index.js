@@ -17,18 +17,13 @@ links.forEach(link => {
 });
 
 
-// const enquiryFormBtn = document.getElementById('enquiry-form-btn')
-// enquiryFormBtn.addEventListener('click',()=>{
-//     document.getElementById('container').innerHTML = ''
-//     document.getElementById('enquiry-form').classList.add('show')
-//     console.log("hello")
-// })
 
 //Store blog posts data
 const blogPosts = [
     {
         id: 1,
         title: "Top 10 Tips for Swimming Pool Maintenance Year-Round.",
+        image: "./images/pool1.jpg",
         cardContent: "Discuss essential maintenance steps every pool owner should know, covering seasonal care, cleaning tips, and signs of potential issues.",
         content: `Keeping your pool pristine is essential for a safe, enjoyable swim season after season.<br><br> At Zaurac General Maintenance & Swimming Pool Services, we know the value of a well-maintained pool, and we’re here to share our top tips to help you care for yours all year long!<br><br>
                 
@@ -80,6 +75,7 @@ const blogPosts = [
     {
         id: 2,
         title: "The Importance of Regular Maintenance for Commercial Properties.",
+        image: "./images/pool2.jpg",
         cardContent: "Discuss essential maintenance steps every pool owner should know, covering seasonal care, cleaning tips, and signs of potential issues.",
         content: `In the fast-paced world of commercial property management, regular maintenance is key to ensuring that your building remains safe, functional, and appealing.<br><br>
 At Zaurac General Maintenance & Swimming Pool Services, we understand the value of routine upkeep and offer a range of services to keep properties running smoothly.<br><br>
@@ -125,6 +121,7 @@ Regular maintenance isn’t just about keeping things working; it’s an investm
     {
         id: 3,
         title: "Choosing the Right Maintenance Company for Your Property: What to Look For",
+        image: "./images/pool3.jpg",
         cardContent: "Compare the costs, benefits, and limitations of DIY pool care versus hiring professionals, emphasizing quality, time savings, and expertise.",
         content: `Choosing the Right Maintenance Company for Your Property<br><br>
 Selecting the right maintenance company for your property can make all the difference in ensuring its value, safety, and appeal. With numerous providers available, finding a team you can trust is essential. Here at Zaurac General Maintenance & Swimming Pool Services, we know what it takes to offer dependable, professional, and quality services. Here’s what to look for when making this critical decision.<br><br>
@@ -173,6 +170,7 @@ Choosing a maintenance company involves considering a variety of factors, from e
     {
         id: 4,
         title: "DIY Pool Maintenance vs. Professional Services: Which is Right for You?",
+        image: "./images/pool4.jpg",
         cardContent: "Offer advice on selecting a maintenance provider, with criteria like experience, certifications, and customer reviews.",
         content: `DIY Pool Maintenance vs. Professional Services: Which is Right for You?<br><br>
 Owning a pool is a wonderful luxury, but it also requires regular upkeep to keep it clean, safe, and inviting. Many pool owners wonder whether they should handle maintenance tasks themselves or leave it to the professionals. Here at Zaurac General Maintenance & Swimming Pool Services, we’ve outlined the benefits and challenges of both approaches to help you decide which option best suits your needs.<br><br>
@@ -217,6 +215,7 @@ Whether you’re considering a DIY approach or leaning toward professional help,
     {
         id: 5,
         title: "How to Prepare Your Pool for Each Season",
+        image: "./images/pool5.jpg",
         cardContent: "Provide a guide on seasonal pool preparations, like winterizing a pool and getting it ready for summer use, to keep it in top condition.",
         content: `How to Prepare Your Pool for Each Season<br><br>
 Maintaining a pool requires attention to detail throughout the year. Each season brings unique challenges and preparation needs to keep your pool in pristine condition. At Zaurac General Maintenance & Swimming Pool Services, we’ve compiled essential tips to help you prepare your pool for each season effectively.<br><br>
@@ -282,6 +281,7 @@ Each season presents unique tasks to ensure your pool remains in top condition. 
     {
         id: 6,
         title: "Signs Your Property Needs a Maintenance Check-Up",
+        image: "./images/pool6.jpg",
         cardContent: "Describe common red flags in properties (like water stains, electrical issues, or peeling paint) and when to call in professional maintenance.",
         content: `Signs Your Property Needs a Maintenance Check-Up<br><br>
 Regular maintenance is crucial for ensuring the safety, functionality, and aesthetic appeal of your property. However, many property owners may overlook warning signs that indicate a maintenance check-up is needed. At Zaurac General Maintenance & Swimming Pool Services, we believe in proactive care to help prevent costly repairs. Here are key signs that suggest your property could benefit from a maintenance check-up.<br><br>
@@ -342,7 +342,7 @@ function createCardsView() {
         card.className = 'card';
         card.innerHTML = `
             <div class="card-head">
-                <img src="images/maintanence.jpg" alt="">
+                <img src="${post.image}" alt="">
                 <div class="card-overlay"></div>
             </div>
             <div class="card-contents blog-contents">
