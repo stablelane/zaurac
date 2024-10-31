@@ -426,12 +426,12 @@ a[href^="mailto:"] {
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 0;
+        bottom: 0px;
         right: -80%;
         width: 80%;
         height: 100vh;
         background: #171f22;
-        padding-top: 4rem;
+        padding-top: 18rem;
         transition: right 0.3s ease-in-out;
         backdrop-filter: blur(10px);
         z-index: 1000;
