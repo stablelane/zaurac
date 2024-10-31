@@ -37,7 +37,7 @@ header.logo a {
 .logo-image img {
     width: 50px;
 }
-header.logo h1,footer h1 {
+header.logo h1,footer h1,footer .footer-logo {
     font-family: "Aeonis LT W04 Bold Cond"; 
     color: #fff;
     font-size: 2em;

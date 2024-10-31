@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head lang="en">
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zaurac Pool Services</title>
@@ -28,20 +28,20 @@
 
 <body>
     <header id="home" class="logo">
-        <a href="index.html" class="logo-image">
+        <a aria-label="Home page" href="index.html" class="logo-image">
             <img src="images/logo5-removebg.png" alt="">
             <h1>ZAURAC</h1>
         </a>
         <div class="nav-links-top">
-            <a href="index.html">Home</a>
-            <a href="blog.html">Blogs</a>
-            <a href="index.html">Services</a>
-            <a href="#footer">Contact</a>
+            <a aria-label="Home page" href="index.html">Home</a>
+            <a aria-label="Read blogs on pool maintanence" href="blog.html">Blogs</a>
+            <a aria-label="our services" href="index.html">Services</a>
+            <a aria-label="Get our contact information" href="#footer">Contact</a>
         </div>
     </header>
     <nav class="navbar">
         <div class="nav-content">
-            <a href="index.html" class="nav-icons">
+            <a aria-label="Home page" href="index.html" class="nav-icons">
                 <img src="images/home.png" alt="" class="email-logo">
                 <p>Home</p>
             </a>
@@ -50,7 +50,7 @@
                 <p>Whatsapp</p>
             </a>
 
-            <a href="tel:+971503681163"  class="nav-icons">
+            <a aria-label="Call Zaurac at +971503681163" href="tel:+971503681163"  class="nav-icons">
                 <img src="images/phone-call.png" alt="" class="call-logo">
                 <p>Call</p>
             </a>
@@ -64,10 +64,10 @@
                 <p>Menu</p>
             </div>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="blog.html">Blogs</a>
-                <a href="index.html">Services</a>
-                <a href="#footer">Contact</a>
+                <a aria-label="Home page" href="index.html">Home</a>
+                <a aria-label="Read blogs on pool maintanence" href="blog.html">Blogs</a>
+                <a aria-label="our services" href="index.html">Services</a>
+                <a aria-label="Get our contact information" href="#footer">Contact</a>
             </div>
         </div>
     </nav>
@@ -78,11 +78,11 @@
                 <input type="hidden" name="access_key" value="e9015578-333b-4524-b9bb-5f61a84d2752">
                 <h2>Get in touch</h2>
                 <label for="customer-name"></label>
-                <input name="customer-name" id="customer-name" placeholder="Name" type="text" required>
+                <input name="customer-name" id="customer-name" placeholder="Name" type="text" required aria-label="Your Name">
                 <label for="customer-phone"></label>
-                <input name="customer-phone" id="customer-phone" placeholder="Phone" type="tel" required>
+                <input name="customer-phone" id="customer-phone" placeholder="Phone" type="tel" required aria-label="Your phone number">
                 <label for="service"></label>
-                <select name="service" id="service">
+                <select name="service" id="service" aria-label="Select Service">
                     <option value="Regular Maintenance">Regular Maintenance</option>
                     <option value="Equipment Repair & Upkeep">Equipment Repair & Upkeep</option>
                     <option value="Seasonal Services">Seasonal Services</option>
@@ -93,10 +93,10 @@
                     <option value="Other">Others</option>
                 </select>
                 <label for="message"></label>
-                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <textarea name="message" id="message" placeholder="Message" aria-label="Message"></textarea>
                 <!-- honeypot spam protection -->
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                <button type="submit" >
+                <button type="submit" aria-label="Send Message">
                     Send Message
                 </button>
             </form>
@@ -116,7 +116,7 @@
         <div class="socials">
             <a href="tel:+971503681163" class="phone-no">+971503681163</a>
             <a href="tel:+971568951163" class="phone-no">+971568951163</a>
-            <a href="mailto:zaurac@gmail.com" class="email">info@zaurac-uae.com</a>
+            <a href="mailto:info@zaurac-uae.com" class="email">info@zaurac-uae.com</a>
             <div class="social-logo">
                 <a href="https://www.instagram.com/zaurac/?hl=en" target="_blank"><img src="images/insta.png"
                         alt=""></a>
