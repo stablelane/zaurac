@@ -31,6 +31,7 @@ header.logo a {
     display: flex;
     gap: 15px;
     align-items: center;
+    margin-left: -10px;
 }
 .logo-image img {
     width: 50px;
