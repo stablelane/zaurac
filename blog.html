@@ -222,14 +222,15 @@
             </div>
         </section> -->
     </div>
-    <div id="enquiry-form" class="enquiry-form enquiryform-blog">
+    <div id="enquiry-form" class="enquiry-form">
         <div class="card">
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="1317f614-06e3-4894-a7d5-5b4b25b32784">
                 <h2>Get in touch</h2>
                 <label for="customer-name"></label>
-                <input name="customer-name" id="customer-name" placeholder="Name" type="text">
+                <input name="customer-name" id="customer-name" placeholder="Name" type="text" required>
                 <label for="customer-phone"></label>
-                <input name="customer-phone" id="customer-phone" placeholder="Phone" type="tel">
+                <input name="customer-phone" id="customer-phone" placeholder="Phone" type="tel" required>
                 <label for="service"></label>
                 <select name="service" id="service">
                     <option value="Regular Maintenance">Regular Maintenance</option>
@@ -243,8 +244,9 @@
                 </select>
                 <label for="message"></label>
                 <textarea name="message" id="message" placeholder="Message"></textarea>
-                <label for="sumbit-button"></label>
-                <button name="submit-button" id="submit-button">
+                <!-- honeypot spam protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <button type="submit" >
                     Send Message
                 </button>
             </form>
