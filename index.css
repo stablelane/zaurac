@@ -29,7 +29,7 @@ header.logo a {
 }  
 .logo-image {
     display: flex;
-    gap: 15px;
+    gap: 5px;
     align-items: center;
     margin-left: -10px;
 }
