@@ -19,7 +19,8 @@ a{
 header.logo {
     padding: 1em 2em;
     background: rgb(0,61,126);
-    background: linear-gradient(90deg, rgba(0,61,126,1) 0%, rgba(0,212,255,1) 100%);     display: flex;
+    background: linear-gradient(90deg, rgba(0,61,126,1) 0%, rgba(0,212,255,1) 100%);     
+    display: flex;
     align-items: center;
     justify-content: space-around;
     max-width: 100vw;
