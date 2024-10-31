@@ -396,6 +396,20 @@ a[href^="mailto:"] {
 .enquiryform-blog {
     height: 100%;
 }
+.back-button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #333;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: #666;
+}
 @media(max-width: 768px) {   
     .hamburger {
         display: flex;
@@ -474,6 +488,18 @@ a[href^="mailto:"] {
         position: relative;
         top: 20px;
         left: 120px;
+    }
+    .blogpost {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+    .blogpost-head {
+        font-size: 2rem;
+    }
+    .enquiryform-blog {
+        height: 100%;
+        padding-bottom: 30px;
     }
 }
 @media(min-width:992px) {
