@@ -37,6 +37,17 @@ header.logo a {
 .logo-image img {
     width: 50px;
 }
+.logo-text {
+    position: relative;
+}
+.logo-small-text {
+    margin: 0;
+    font-size: 0.3rem;
+    position: absolute;
+    top: 30px;
+    font-weight: 300;
+    text-wrap: nowrap;
+}
 header.logo h1,footer h1,footer .footer-logo {
     font-family: "Aeonis LT W04 Bold Cond"; 
     color: #fff;
@@ -462,6 +473,21 @@ a[href^="mailto:"] {
     .nav-links-top {
         display: flex;
         gap: 2rem;
+        align-items: center;
+    }
+    .nav-links-top .phone-number {
+        background-color: #003d7e;
+        padding: 0.5em 1em;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .phone-number img{
+        width: 15px;
+        filter: invert(100%);
     }
     .container {
         margin-top: 70px;
@@ -511,6 +537,10 @@ a[href^="mailto:"] {
 @media(min-width:992px) {
     header.logo h1,footer h1 {
         font-size: 2.5em;
+    }
+    .logo-small-text {
+        top: 40px;
+        font-size: 0.35rem;
     }
     header.logo {
         justify-content: space-around;
