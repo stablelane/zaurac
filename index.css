@@ -153,6 +153,7 @@ header.logo h1,footer h1,footer .footer-logo {
     font-family: "Inter", sans-serif;
     color: white;
     position: relative;
+    
 }
 .hero-image {
     position: absolute;
@@ -162,6 +163,7 @@ header.logo h1,footer h1,footer .footer-logo {
     height: 100%;
     object-fit: cover;
     z-index: 1;
+    filter: brightness(80%);
 }
 .hero-content {
     position: absolute;
@@ -169,7 +171,9 @@ header.logo h1,footer h1,footer .footer-logo {
     top: 130px;
     width: 350px;
     left: 30px;
+
 }
+
 .hero-p {
     color: #daedf7;
     font-weight: 700;
@@ -215,8 +219,9 @@ header.logo h1,footer h1,footer .footer-logo {
     overflow: hidden;
 }
 .card-head img {
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 .card-overlay {
@@ -262,18 +267,19 @@ header.logo h1,footer h1,footer .footer-logo {
     left: 0;
 }
 .card button{
-    background: rgb(2,0,36);
+    background: rgba(0,61,126,1);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,61,126,1) 0%, rgba(0,212,255,1) 100%); 
     color: #fff;
     border: none;
     padding: 10px 15px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 1rem;
     font-weight: 600;
     position: absolute;
     left: 15px;
     bottom: 20px;
     cursor: pointer;
+    font-weight: 600;
     
 }
 
